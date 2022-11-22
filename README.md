@@ -72,8 +72,16 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 - jalankan `composer install` di terminal
 - pergi ke phpmyadmin, buat database bernama `db_siswa` (default) atau bisa custom nama database sesuai di .env nanti sesuai konfigurasi database
 - duplikat file `.env.example` dan rename menjadi `.env`
+- seting konfigurasi database di `.env`
+    - ```
+        DB_CONNECTION=mysql
+        DB_HOST=127.0.0.1
+        DB_PORT=3306
+        DB_DATABASE=db_siswa
+        DB_USERNAME=root
+        DB_PASSWORD=
+        ```
 - jalankan `php artisan key:generate`
-- kamu bisa konfigurasi lagi database agar cocok dengan setingan asli kami di `.env`
 - jalankan `php artisan migrate` di terminal
-- jalankan `php artisan make:seeder --class=SiswaSedeer` untuk membuat data "dummy" jika diperlukan.
+- jalankan `php artisan db:seed --class=SiswaSedeer` untuk membuat data "dummy" jika diperlukan.
 - `php artisan serve` untuk menjalankan server agar dapat diakses di http://localhost:8000/
