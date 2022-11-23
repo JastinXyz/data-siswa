@@ -83,5 +83,5 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
         ```
 - jalankan `php artisan key:generate`
 - jalankan `php artisan migrate` di terminal
-- jalankan `php artisan db:seed --class=SiswaSedeer` untuk membuat data "dummy" jika diperlukan.
+- jalankan `php artisan db:seed --class=SiswaSeeder` untuk membuat data "dummy" jika diperlukan.
 - `php artisan serve` untuk menjalankan server agar dapat diakses di http://localhost:8000/
